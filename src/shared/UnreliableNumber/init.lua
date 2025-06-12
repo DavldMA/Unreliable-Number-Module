@@ -78,12 +78,8 @@ METHODS:
         -- Equivalent to multiplying by 10^n, altering integer/decimal split.
         -- Preserves formatting but may change precision.
 
-    UnreliableNumber:normalize(config?: table) --> nil
+    UnreliableNumber:normalize() --> nil
         -- Adjusts string representation for visual formatting.
-        -- Optional config:
-        --   maxDecimalDigits: number?       -- Truncates decimal to max digits
-        --   trimLeadingZeros: boolean?      -- Removes unnecessary leading integer zeros
-        --   preserveZeros: boolean?         -- Keeps trailing zeros in decimal part
 
     UnreliableNumber:serialize(raw: boolean?) --> [string | number]
         -- Returns string representation preserving format.
