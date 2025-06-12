@@ -7,8 +7,8 @@ A Lua library designed for **formatting-sensitive numeric values**. It preserves
 
 ## 📘 Table of Contents
 
-1. [Introduction]()
-2. [Philosophy](#philosophy)
+1. [Introduction](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-unreliable-number-1)
+2. [Philosophy](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#%EF%B8%8F-philosophy)
 
    * [Why “Unreliable”?](#why-unreliable)
 3. [Core Concepts](#core-concepts)
