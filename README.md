@@ -140,7 +140,7 @@ UnreliableNumber.newFromSuffix(str)    -- parse suffixes like "1K", "2.5M"
 
 ## Installation
 
-Copy the module's `.lua` files into your project or require it directly:
+Download the module from [Releases](https://github.com/DavldMA/Unreliable-Number-Module/releases/tag/stable) or from the [Asset Store](https://create.roblox.com/store/asset/106133736518890/Unreliable-Number), or even just compile yourself with rojo, by downloading this repository.
 
 ```lua
 local UnreliableNumber = require(path_to.UnreliableNumber)
