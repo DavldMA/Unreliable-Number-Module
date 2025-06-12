@@ -136,6 +136,7 @@ UnreliableNumber.newFromSuffix(str)    -- parse suffixes like "1K", "2.5M"
 * `:compare()` returns `-1`, `0`, or `1`
 * Supports `==`, `<`, `<=` metamethods
 
+More Info On [Roblox Studio Forum](https://devforum.roblox.com/t/unreliable-number-%E2%80%94-a-non-reliable-number-but-wait/3708915)
 ---
 
 ## Installation
