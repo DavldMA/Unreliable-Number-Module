@@ -15,10 +15,10 @@ A Lua library designed for **formatting-sensitive numeric values**. It preserves
 
    * [Marginal Utility](#marginal-utility)
    * [The Subjectivity of Value](#the-subjectivity-of-value)
-4. [Comparison with Other Libraries](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-comparison-with-other-libraries)
+4. [Comparison with Other Libraries](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-comparison)
 
-   * [Unreliable vs. Others](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-comparison-with-other-libraries)
-   * [When to Use Each Module](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-when-to-use-each-module)
+   * [Unreliable vs. Others](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#comparison-with-other-libraries)
+   * [When to Use Each Module](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#when-to-use-each-module)
 5. [Features](#features)
 
    * [Core Fields](#core-fields)
