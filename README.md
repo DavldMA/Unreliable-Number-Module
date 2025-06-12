@@ -11,14 +11,14 @@ A Lua library designed for **formatting-sensitive numeric values**. It preserves
 2. [Philosophy](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#%EF%B8%8F-philosophy)
 
    * [Why “Unreliable”?](#why-unreliable)
-3. [Core Concepts](#core-concepts)
+3. [Core Concepts](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-core-concepts)
 
    * [Marginal Utility](#marginal-utility)
    * [The Subjectivity of Value](#the-subjectivity-of-value)
-4. [Comparison with Other Libraries](#comparison-with-other-libraries)
+4. [Comparison with Other Libraries](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-comparison-with-other-libraries)
 
-   * [Unreliable vs. Others](#unreliable-vs-others)
-   * [When to Use Each Module](#when-to-use-each-module)
+   * [Unreliable vs. Others](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-comparison-with-other-libraries)
+   * [When to Use Each Module](https://github.com/DavldMA/Unreliable-Number-Module/tree/main?tab=readme-ov-file#-when-to-use-each-module)
 5. [Features](#features)
 
    * [Core Fields](#core-fields)
@@ -74,7 +74,9 @@ A Lua library designed for **formatting-sensitive numeric values**. It preserves
 
 ---
 
-## 🔄 Comparison with Other Libraries
+## 🔄 Comparison
+
+### Comparison with Other Libraries
 
 | Feature / Module       | [BigNum](https://github.com/ennorehling/euler/blob/master/BigNum.lua) | [InfiniteMath](https://github.com/KdudeDev/InfiniteMath) | [Gigantix](https://github.com/DavldMA/Gigantix)              | [Unreliable Number](https://github.com/DavldMA/Unreliable-Number-Module)                           |
 | ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
@@ -86,7 +88,7 @@ A Lua library designed for **formatting-sensitive numeric values**. It preserves
 
 ---
 
-## 🧠 When to Use Each Module
+### When to Use Each Module
 
 * **BigNum**: For complex integer math with arbitrary precision where Lua's default is insufficient.
 * **InfiniteMath**: When working with numbers exceeding floating-point limits (e.g., 10^308), especially in Roblox.
