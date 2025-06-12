@@ -29,15 +29,8 @@ A Lua library designed for **formatting-sensitive numeric values**. It preserves
    * [Comparison Methods](#comparison-methods)
 6. [Installation](#installation)
 7. [Examples](#examples)
-8. [API Reference](#api-reference)
-
-   * [Constructors](#constructors-1)
-   * [Formatting & Precision](#formatting--precision)
-   * [Arithmetic](#arithmetic)
-   * [Comparison](#comparison)
-   * [Serialization](#serialization-1)
-9. [Use Cases](#use-cases)
-10. [Caveats](#caveats)
+8. [Use Cases](#use-cases)
+9. [Caveats](#caveats)
 
 ---
 
@@ -184,43 +177,6 @@ end
 b:round("floor")
 print(b:toString())       -- e.g., "2M"
 ```
-
----
-
-## API Reference
-
-### Constructors
-
-| Function                                     | Purpose                     |
-| -------------------------------------------- | --------------------------- |
-| `new(sign, integer, trailingZeros, decimal)` | Build manually              |
-| `newFromNumber(num)`                         | Approximate from Lua number |
-| `newFromString(str)`                         | Preserve exact input format |
-| `newFromSuffix(str)`                         | Parse suffix notation       |
-
-### Formatting & Precision
-
-* `:normalize(config?)`
-* `:removeDecimals()`
-* `:shiftLeft(n) / :shiftRight(n)`
-* `:round(mode)`
-
-### Arithmetic
-
-* `:add()`, `:subtract()`, `:multiply()`, `:divide()`
-* Supports `+`, `-`, `*`, `/` operators
-
-### Comparison
-
-* `:isEquals()`, `:isGreater()`, `:isLesser()`, etc.
-* `:compare()` → -1, 0, 1
-* Overloads `==`, `<`, `<=`
-
-### Serialization
-
-* `:toString()`, `:toFullNumber()`
-* `:toSuffix()`, `:toFullSuffix()`
-* `:toNumber()`
 
 ---
 
