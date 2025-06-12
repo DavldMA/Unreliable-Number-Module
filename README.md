@@ -118,10 +118,9 @@ UnreliableNumber.newFromSuffix(str)    -- parse suffixes like "1K", "2.5M"
 
 ### Formatting & Rounding
 
-* `:normalize(config?)` — trim/expand zeros, set decimal precision
+* `:normalize()` — normalize the Unreliable Number
 * `:removeDecimals()` — drop fractional part
 * `:shiftLeft(n)` / `:shiftRight(n)` — visually move decimal point
-* `:round("floor" | "ceil" | "nearest")` — visual rounding (not mathematically exact)
 
 ### Serialization
 
@@ -156,7 +155,7 @@ local U = UnreliableNumber
 
 -- From formatted string
 local a = U.newFromString("00100.5000")
-a:normalize({ trimLeadingZeros = true, preserveZeros = false })
+a:normalize()
 assert(a:toString() == "100.5")
 
 -- From suffix notation
@@ -172,10 +171,6 @@ print(c:toSuffix())       -- e.g., "5.0001M" (format preserved)
 if b:isGreater(a) then
    print("b is visually larger than a")
 end
-
--- Rounding
-b:round("floor")
-print(b:toString())       -- e.g., "2M"
 ```
 
 ---
