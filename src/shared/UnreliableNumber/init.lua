@@ -1,5 +1,5 @@
 --[[
-Unreliable Number
+UnreliableNumber (Module)
 
     A loosely formatted numeric representation preserving input precision and layout.
     Useful when formatting fidelity matters more than arithmetic accuracy, such as for
@@ -72,7 +72,7 @@ METHODS:
         -- Shifts the decimal point left by `n` digits.
         -- Equivalent to dividing by 10^n, altering integer/decimal split.
         -- Preserves formatting but may change precision.
-
+        
     UnreliableNumber:shiftRight(n: number) --> nil
         -- Shifts the decimal point right by `n` digits.
         -- Equivalent to multiplying by 10^n, altering integer/decimal split.
@@ -85,10 +85,6 @@ METHODS:
         --   trimLeadingZeros: boolean?      -- Removes unnecessary leading integer zeros
         --   preserveZeros: boolean?         -- Keeps trailing zeros in decimal part
 
-    UnreliableNumber:round(mode: "floor" | "ceil" | "nearest") --> nil
-        -- Performs visual-only rounding. 
-        -- Uses approximate logic, not mathematically rigorous.
-
     UnreliableNumber:serialize(raw: boolean?) --> [string | number]
         -- Returns string representation preserving format.
         -- If `raw` is true, converts to Lua number (may lose accuracy).
@@ -100,11 +96,11 @@ METHODS:
     UnreliableNumber:isGreater(other: UnreliableNumber) --> [boolean]
         -- Checks if this instance is greater than another.
         -- Compares based on formatting, not numeric value.
-
+    
     UnreliableNumber:isLesser(other: UnreliableNumber) --> [boolean]
         -- Checks if this instance is lesser than another.
         -- Compares based on formatting, not numeric value.
-
+    
     UnreliableNumber:isGreaterOrEquals(other: UnreliableNumber) --> [boolean]
         -- Checks if this instance is greater than or equal to another.
         -- Compares based on formatting, not numeric value.
@@ -112,7 +108,7 @@ METHODS:
     UnreliableNumber:isLesserOrEquals(other: UnreliableNumber) --> [boolean]
         -- Checks if this instance is lesser than or equal to another.
         -- Compares based on formatting, not numeric value.
-
+    
     UnreliableNumber:isZero() --> [boolean]
         -- Checks if this instance represents zero.
         -- Compares based on formatting, not numeric value.
@@ -159,9 +155,12 @@ USAGE NOTES:
 VERSION:
 
     v1.0.0 - Core Code
-    v1.0.1 - Revised Documentation
+    v1.0.1 - Revised the Documentation
 
 --]]
+
+
+
 
 local Arithmetic = require(script.Arithmetic)
 local Comparision = require(script.Comparision)
@@ -172,6 +171,7 @@ local Serializer = require(script.Serializer)
 local Utils = require(script.Utils)
 local printd = require(script.Debugger)
 local UnreliableNumber = {}
+
 
 UnreliableNumber.__index = UnreliableNumber
 
@@ -203,12 +203,14 @@ export type UnreliableNumber = {
 }
 
 local config = {
-	significantDigits = 20, -- Maximum significant digits for the integer part
-	significantDecimals = 4, -- Maximum significant digits for the decimal part
-	roundingMode = "nearest", -- Rounding mode: "ceil", "floor", or "nearest"
-	autoNormalize = true, -- Auto normalize the number (recommended)
-	debug = false, -- Debug mode for testing, outputs extra information
+	significantDigits = 20,       -- Maximum significant digits for the integer part
+	significantDecimals = 4,      -- Maximum significant digits for the decimal part
+	roundingMode = "nearest",     -- Rounding mode: "ceil", "floor", or "nearest"
+	autoNormalize = true,		  -- Auto normalize the number (recommended)
+	debug = false,                -- Debug mode for testing, outputs extra information
 }
+
+
 
 function setup()
 	for k, v in pairs(config) do
