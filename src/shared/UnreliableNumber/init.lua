@@ -1,5 +1,5 @@
 --[[
-UnreliableNumber (Module)
+Unreliable Number
 
     A loosely formatted numeric representation preserving input precision and layout.
     Useful when formatting fidelity matters more than arithmetic accuracy, such as for
