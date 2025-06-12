@@ -156,6 +156,7 @@ VERSION:
 
     v1.0.0 - Core Code
     v1.0.1 - Revised the Documentation
+	v1.0.2 - Added Tests
 
 --]]
 
